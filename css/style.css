@@ -1,0 +1,170 @@
+body {
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+    background-color: #50aace;
+    font-family: STARWARS, sans-serif;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    background: #272822;
+    padding: 40px;
+    border: 10px solid #F8C627;
+}
+
+.graphics {
+    position: relative;
+    width: 960px;
+}
+
+canvas {
+	width: 960px;
+    height: 550px;
+}
+
+.wrapper {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #F8C627;
+    opacity: 0.9;
+}
+
+#player, #enemy, #coin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.attack {
+    width: 960px;
+    height: 550px;
+    position: absolute;
+    border-radius: 10px;
+    background: red;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+}
+
+#Health, #Score {
+    color: #F8C627;
+}
+
+nav {
+    font-size: 20px;
+    position: relative;
+    float: right;
+    color: white;
+}
+
+.controlDescripton {
+    width: 250px;
+    background: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 0 10px 10px;
+    list-style: none;
+    color: black;
+}
+
+.controlDescripton > span {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.healthDiagramBorder, .scoreDiagramBorder {
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px black;
+    margin-bottom: 30px;
+}
+
+#healthDiagram, #scoreDiagram {
+    height: 20px;
+    border-radius: 5px;
+    background: #F8C627;
+}
+
+ #scoreDiagram {
+    width: 0;
+ }
+
+#play-again {
+    width: 200px;
+    height: 60px;
+    font-family: STARWARS, sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #F8C627;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#play-again:hover {
+    background: #50AACE;
+    color: white;
+    cursor: pointer;
+}
+
+#lifePanel {
+    padding: 0;
+}
+
+#lifePanel li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px black;
+}
+
+.lifeVisible {
+    background: #F8C627;
+}
+
+#gameOver, #winGame {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #F8C627;
+    text-transform: uppercase;
+}
+
+.hiddenText {
+    visibility: hidden;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 300px;
+    height: 70px;
+    font-family: STARWARS, sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #F8C627;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+input:hover {
+    background: #50AACE;
+    color: white;
+    cursor: pointer;
+}

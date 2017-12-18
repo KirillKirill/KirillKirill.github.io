@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #50aace;
+    font-family: STARWARS, sans-serif;
+}
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border: 10px solid #F8C627;
+}
+
+.wrapper {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#play-again {
+    width: 200px;
+    height: 60px;
+    font-family: STARWARS, sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #F8C627;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+#play-again:hover {
+    background: #50AACE;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    width: 300px;
+    height: 70px;
+    font-family: STARWARS, sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #F8C627;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+input:hover {
+    background: #50AACE;
+    color: white;
+    cursor: pointer;
+}

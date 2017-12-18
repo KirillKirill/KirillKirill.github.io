@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevCrew Simple Game</title>
+        <meta charset = 'UTF-8'>
+    	<link rel = "stylesheet" href = "css/style.css">
+        <link href = 'http://fonts.googleapis.com/css?family=STARWARS:400,700' rel = "stylesheet" type = 'text'>
+    </head>
+    <body> 
+    	<div class = 'wrapper'>
+            <div id = "container">
+        		<nav>
+        			<div class="health">Health: <span id = "Health"></span></div>
+            		<div class="healthDiagramBorder"><div id = "healthDiagram"></div></div>
+            		<div class="score">Score: <span id = "Score"></span></div>
+            		<div class="scoreDiagramBorder"><div id="scoreDiagram"></div></div>
+            		<ul id = "lifePanel">
+                		<span>Life</span>
+                			<li></li>
+                			<li></li>
+                 	</ul>
+                    <ul class = "controlDescripton">
+                		<span>control</span>
+                		<li>UP - move up</li>
+                		<li>DOWN - move down</li>
+                		<li>LEFT - move left</li>
+                		<li>RIGHT - move right</li>
+            		</ul>
+            		<button id="play-again" type="button">Play Again</button>
+        		</nav>
+            	<div class = "graphics">
+                	<canvas id = "background" width = '960' height = '550' ></canvas>
+                	<div id="playerUnderAttack"></div>              
+                	<canvas id = "enemy" width = '960' height = '550'></canvas>
+                	<canvas id = "player" width = '960' height = '550'></canvas>
+                	<canvas id = "coin" width = '960' height = '550'></canvas>
+                	<span id = "gameOver" class = "hiddenText">game over</span>
+                	<span id = "winGame" class = "hiddenText">you won!!!</span>
+            	</div>
+                <audio autoplay = "autoplay" loop = "loop" src = "audio/starwars.mp3"></audio>
+        	</div>
+    	</div>
+        <script src="JS/Resources.js"></script>
+        <script src="JS/Background.js"></script>
+        <script src="JS/KeyBoard.js"></script>
+        <script src="JS/Enemy.js"></script>
+        <script src="JS/Coins.js"></script>
+        <script src="JS/Player.js"></script>
+        <script src="JS/CrashEvent.js"></script>
+        <script src="JS/App.js"></script>
+        <footer>
+            <form>
+                <input type="button" value="ABOUT GAME" onClick='location.href="page.html"'>
+                <input type="button" value="PRESENTATION" onClick='location.href="https://slides.com/kirill_bochkarev/game-3/live#/"'>
+            </form>
+        </footer>
+    </body>
+</html>
